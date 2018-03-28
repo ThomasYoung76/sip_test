@@ -1,0 +1,97 @@
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from ParamRegisterFailed/ParamTestReg
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_01/0
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationSuccess ***
+[       OK ] ParamRegisterFailed/ParamTestReg.reg_01/0 (1055 ms)
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_01/1
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationSuccess ***
+[       OK ] ParamRegisterFailed/ParamTestReg.reg_01/1 (1006 ms)
+[----------] 2 tests from ParamRegisterFailed/ParamTestReg (2061 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (2062 ms total)
+[  PASSED  ] 2 tests.
+Running main() from gmock_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from ParamRegisterFailed/ParamTestReg
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_02/0
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationFailure ***
+*** In TestForCall::onRegistrationFailure ***
+[       OK ] ParamRegisterFailed/ParamTestReg.reg_02/0 (2076 ms)
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_02/1
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationFailure ***
+*** In TestForCall::onRegistrationFailure ***
+[       OK ] ParamRegisterFailed/ParamTestReg.reg_02/1 (2023 ms)
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_02/2
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationFailure ***
+*** In TestForCall::onRegistrationFailure ***
+[       OK ] ParamRegisterFailed/ParamTestReg.reg_02/2 (2023 ms)
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_02/3
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationFailure ***
+*** In TestForCall::onRegistrationFailure ***
+[       OK ] ParamRegisterFailed/ParamTestReg.reg_02/3 (2021 ms)
+[----------] 4 tests from ParamRegisterFailed/ParamTestReg (8144 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (8145 ms total)
+[  PASSED  ] 4 tests.
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from ParamRegisterFailed/ParamTestReg
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_03/0
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+test_reg_03.cpp:34: Failure
+Value of: ua.registerToProxy(ua.getRegistrar(), GetParam())
+  Actual: true
+Expected: false
+*** In TestForCall::onRegistrationSuccess ***
+[  FAILED  ] ParamRegisterFailed/ParamTestReg.reg_03/0, where GetParam() = 0 (2058 ms)
+[ RUN      ] ParamRegisterFailed/ParamTestReg.reg_03/1
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+test_reg_03.cpp:34: Failure
+Value of: ua.registerToProxy(ua.getRegistrar(), GetParam())
+  Actual: true
+Expected: false
+*** In TestForCall::onRegistrationSuccess ***
+[  FAILED  ] ParamRegisterFailed/ParamTestReg.reg_03/1, where GetParam() = -100 (2011 ms)
+[----------] 2 tests from ParamRegisterFailed/ParamTestReg (4070 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (4071 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] ParamRegisterFailed/ParamTestReg.reg_03/0, where GetParam() = 0
+[  FAILED  ] ParamRegisterFailed/ParamTestReg.reg_03/1, where GetParam() = -100
+
+ 2 FAILED TESTS
+Running main() from gmock_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Test
+[ RUN      ] Test.reg_04
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+[       OK ] Test.reg_04 (11100 ms)
+[----------] 1 test from Test (11100 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (11105 ms total)
+[  PASSED  ] 1 test.

@@ -1,0 +1,263 @@
+Running main() from gmock_main.cc
+Note: Google Test filter = *Lev1*
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from TestSipCall
+[ RUN      ] TestSipCall.Lev1_call_01
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In UserAgent::uaThreadProc ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallRinging ***
+*** In TestForCall::onPeerRinging, remoteHost is 10.1.77.87 ***
+[UserAgent] terminate line: 0.
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is 10.1.77.87 ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "487 Request Cancelled" response ***
+[       OK ] TestSipCall.Lev1_call_01 (3051 ms)
+[ RUN      ] TestSipCall.Lev1_call_07
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationSuccess ***
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallRinging ***
+*** In TestForCall::onPeerRinging, remoteHost is 10.1.77.87 ***
+[UserAgent] terminate line: 0.
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is 10.1.77.87 ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "487 Request Cancelled" response ***
+[       OK ] TestSipCall.Lev1_call_07 (8007 ms)
+[----------] 2 tests from TestSipCall (11059 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (11060 ms total)
+[  PASSED  ] 2 tests.
+Running main() from gmock_main.cc
+Note: Google Test filter = *Lev2*
+[==========] Running 6 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from TestSipCall
+[ RUN      ] TestSipCall.Lev2_call_04
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In UserAgent::uaThreadProc ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallRinging ***
+*** In TestForCall::onPeerRinging, remoteHost is 10.1.77.87 ***
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "486 Busy Here" response ***
+*** In CallProcessor::processCallRequestFailure , statusCode = 486***
+*** In TestForCall::onPeerBusy, remoteUsername is 010001000101010101 ***
+*** CallProcessor::setCallBusy(false) ***
+[CallProcessor::processCallFailure] call onTerminated
+*** In TestForCall::onTerminated, remoteHost is  ***
+[UserAgent] terminate line: 0.
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is 10.1.77.87 ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "487 Request Cancelled" response ***
+[       OK ] TestSipCall.Lev2_call_04 (5088 ms)
+[ RUN      ] TestSipCall.Lev2_call_06
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In UserAgent::uaThreadProc ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallRinging ***
+*** In TestForCall::onPeerRinging, remoteHost is 10.1.77.87 ***
+[UserAgent] terminate line: 0.
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is 10.1.77.87 ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "487 Request Cancelled" response ***
+[       OK ] TestSipCall.Lev2_call_06 (4014 ms)
+[ RUN      ] TestSipCall.Lev2_call_10
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationSuccess ***
+[CP] set call forward sipAddr: 010001000101010199@10.1.77.87:6068
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallRinging ***
+*** In TestForCall::onPeerRinging, remoteHost is 10.1.77.87 ***
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "486 Busy Here" response ***
+to cf
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is 10.1.77.87 ***
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010199@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "487 Request Cancelled" response ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+[       OK ] TestSipCall.Lev2_call_10 (66008 ms)
+[----------] 3 tests from TestSipCall (75110 ms total)
+
+[----------] 3 tests from TestCallLev2
+[ RUN      ] TestCallLev2.call_09_01
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationSuccess ***
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallRinging ***
+*** In TestForCall::onPeerRinging, remoteHost is 10.1.77.87 ***
+[UserAgent] terminate line: 0.
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is 10.1.77.87 ***
+[       OK ] TestCallLev2.call_09_01 (6009 ms)
+[ RUN      ] TestCallLev2.call_09_02
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationSuccess ***
+[UserAgent] terminate line: 0.
+[       OK ] TestCallLev2.call_09_02 (1006 ms)
+[ RUN      ] TestCallLev2.call_11
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onRegistrationSuccess ***
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallRinging ***
+*** In TestForCall::onPeerRinging, remoteHost is 10.1.77.87 ***
+[UserAgent] terminate line: 0.
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is 10.1.77.87 ***
+*** In CallProcessor::processCallFailure ***
+*** In CallProcessor::processCallFailure, received the "487 Request Cancelled" response ***
+[       OK ] TestCallLev2.call_11 (3033 ms)
+[----------] 3 tests from TestCallLev2 (10048 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test cases ran. (85160 ms total)
+[  PASSED  ] 6 tests.
+Running main() from gmock_main.cc
+Note: Google Test filter = *Lev3*
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from TestSipCall
+[ RUN      ] TestSipCall.Lev3_call_02_01
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.83:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onCallProxyFailed, remoteUsername is 010001000101010101 ***
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is  ***
+[       OK ] TestSipCall.Lev3_call_02_01 (47159 ms)
+[ RUN      ] TestSipCall.Lev3_call_02_02
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6111
+*** In UserAgent::onSdpOfferSent ***
+*** In UserAgent::uaThreadProc ***
+*** In TestForCall::onCallProxyFailed, remoteUsername is 010001000101010101 ***
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is  ***
+[       OK ] TestSipCall.Lev3_call_02_02 (47112 ms)
+[ RUN      ] TestSipCall.Lev3_call_03_01
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010199@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+start time is : 1509675648
+*** In UserAgent::uaThreadProc ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallNoAnswer ***
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is  ***
+*** CallProcessor::setCallBusy(false) ***
+end time is: 1509675843
+time gap is: 195
+[       OK ] TestSipCall.Lev3_call_03_01 (195248 ms)
+[ RUN      ] TestSipCall.Lev3_call_03_02
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000201010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+start time is : 1509675843
+*** In UserAgent::uaThreadProc ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallNoAnswer ***
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is  ***
+*** CallProcessor::setCallBusy(false) ***
+end time is: 1509676038
+time gap is: 195
+[       OK ] TestSipCall.Lev3_call_03_02 (195242 ms)
+[ RUN      ] TestSipCall.Lev3_call_03_03
+* pthread timeThreadProc create success
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: ysf@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+start time is : 1509676038
+*** In UserAgent::uaThreadProc ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallNoAnswer ***
+*** CallProcessor::setCallBusy(false) ***
+*** In TestForCall::onTerminated, remoteHost is  ***
+*** CallProcessor::setCallBusy(false) ***
+end time is: 1509676233
+time gap is: 195
+[       OK ] TestSipCall.Lev3_call_03_03 (195255 ms)
+[ RUN      ] TestSipCall.Lev3_call_08
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+-> get username: 
+*** CallProcessor::setCallBusy(true) ***
+[CallProcessor::call] call sip: 010001000101010101@10.1.77.87:6068
+*** In UserAgent::onSdpOfferSent ***
+*** In CallProcessor::processCallProceeding ***
+*** In CallProcessor::processCallProceeding ***
+test_call.cpp:253: Failure
+Expected equality of these values:
+  "onPeerRinging"
+  ua.callFlag
+    Which is: ""
+command>[  FAILED  ] TestSipCall.Lev3_call_08 (6022 ms)
+[----------] 6 tests from TestSipCall (686040 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (686041 ms total)
+[  PASSED  ] 5 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] TestSipCall.Lev3_call_08
+
+ 1 FAILED TEST

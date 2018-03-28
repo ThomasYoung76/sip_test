@@ -1,0 +1,30 @@
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from ParamTestCall
+[ RUN      ] ParamTestCall.agent_01
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+[       OK ] ParamTestCall.agent_01 (6 ms)
+[ RUN      ] ParamTestCall.agent_02
+test_agent.cpp:29: Failure
+Value of: UserAgent::initialize()
+  Actual: true
+Expected: false
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+[  FAILED  ] ParamTestCall.agent_02 (9 ms)
+[ RUN      ] ParamTestCall.agent_03
+* pthread timeThreadProc create success
+*** In UserAgent::uaThreadProc ***
+*** In UserAgent::uaThreadProc ***
+[       OK ] ParamTestCall.agent_03 (8 ms)
+[----------] 3 tests from ParamTestCall (25 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (27 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ParamTestCall.agent_02
+
+ 1 FAILED TEST
